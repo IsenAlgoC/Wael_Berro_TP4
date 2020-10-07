@@ -5,15 +5,15 @@
 int main()
 {
 	int MyTab1 [TAILLETAB1];
-	
+	int* MyPtr1;
 	for (int i = 0; i < 20; ++i)
 	{
 		MyTab1[i] = i + 1;
-		printf("\ %d /", MyTab1[i]);
+		printf("%d%c", MyTab1[i],SEPARATEUR);
 	}
-	int MyPtr1 = MyTab1[20];
-	for (MyPtr1 = MyTab1[20]; MyPtr1 > 0; MyPtr1=MyPtr1-1)
+	printf("\n");
+	for (int i = 19; i >= 0; i--)
 	{
-		printf("\ %d /", MyPtr1);
+		printf("%d%c", MyTab1[i],SEPARATEUR);
 	}
 }
