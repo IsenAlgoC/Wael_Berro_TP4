@@ -13,4 +13,3 @@ int main()
 	reponse = _getch();
 
 }
-}
