@@ -10,9 +10,9 @@ int main()
 	printf("\nVotre genre svp : ");
 	reponse = _getch();
 	printf("\nVotre nom svp : ");
-	scanf_s("%c", &Nom);
+	scanf_s("%c", Nom);
 	printf("\nVotre prenom svp : ");
-	scanf_s("%c", &Prenom);
+	scanf_s("%c", Prenom);
 	
 	switch (reponse)
 	{
@@ -21,5 +21,5 @@ int main()
 	case 'F':
 		sexe = 'Madame';
 	}
-	printf(%c %c %c, sexe, Nom, Prenom);
+	printf(%s %s %s, sexe, Nom, Prenom);
 }
