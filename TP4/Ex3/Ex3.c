@@ -6,7 +6,7 @@ int main()
 	char Prenom[20];
 	char Nom[20];
 	char reponse;
-	char sexe;
+	char sexe[20];
 	printf("\nVotre genre svp : ");
 	reponse = _getch();
 	printf("\nVotre nom svp : ");
