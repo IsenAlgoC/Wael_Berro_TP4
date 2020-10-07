@@ -3,20 +3,23 @@
 
 int main()
 {
-	char Prenom;
-	char Nom;
+	char Prenom[20];
+	char Nom[20];
 	char reponse;
-	printf("Votre nom svp : ");
-	scanf_s("%c", &Nom);
-	printf("Votre prenom svp : ");
-	scanf_s("%c", &Prenom);
+	char sexe;
+	printf("\nVotre genre svp : ");
 	reponse = _getch();
-	if (reponse == 'H')
+	printf("\nVotre nom svp : ");
+	scanf_s("%c", &Nom);
+	printf("\nVotre prenom svp : ");
+	scanf_s("%c", &Prenom);
+	
+	switch (reponse)
 	{
-		printf("Monsieur %c %c", Nom, Prenom);
+	case 'H': 
+		sexe = 'Monsieur';
+	case 'F':
+		sexe = 'Madame';
 	}
-	if (reponse == 'F')
-	{
-		printf("Madame %c %c", Nom, Prenom");
-	}
+	printf(%c %c %c, sexe, Nom, Prenom);
 }
