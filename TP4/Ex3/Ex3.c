@@ -11,5 +11,12 @@ int main()
 	printf("Votre prenom svp : ");
 	scanf_s("%c", &Prenom);
 	reponse = _getch();
-
+	if (reponse == 'H')
+	{
+		printf("Monsieur %c %c", Nom, Prenom);
+	}
+	if (reponse == 'F')
+	{
+		printf("Madame %c %c", Nom, Prenom");
+	}
 }
