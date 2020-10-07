@@ -9,8 +9,8 @@ int main()
 	heuredebut.minute = 30;
 	heurefin.heure = 0;
 	heurefin.minute = 0;
-	duree.minute = 0;
-	duree.heure = 4;
+	duree.minute = 45;
+	duree.heure = 0;
 	heurefin.minute = duree.minute + heuredebut.minute;
 	heurefin.heure = duree.heure + heuredebut.heure;
 	if (heurefin.minute > 59)
@@ -22,5 +22,5 @@ int main()
 	{
 		heurefin.heure = heurefin.heure - 24;
 	}
-	printf("/nVoici la nouvelle heure %d:%d", heurefin.heure, heurefin.minute);
+	printf("\nVoici la nouvelle heure %d:%d\n\n", heurefin.heure, heurefin.minute);
 }
